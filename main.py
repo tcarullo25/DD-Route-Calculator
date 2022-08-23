@@ -1,9 +1,5 @@
-import haversine as hs
-from haversine import Unit
 from geopy.geocoders import Nominatim
 import WazeRouteCalculator
-import time
-from datetime import timedelta, datetime
 
 def roundHalfUp(num):
     import decimal
