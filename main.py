@@ -13,6 +13,7 @@ def timeToMins(t):
    return timeInfo
 
 def parseTime(mins):
+    mins = roundHalfUp(mins)
     hours = roundHalfUp(mins//60)
     minutes = roundHalfUp(mins % 60)
     if minutes < 10:
@@ -105,6 +106,3 @@ if __name__ == "__main__":
     # Initialize Nominatim API
     geolocator = Nominatim(user_agent="MyApp")
     main()
-
-
-
