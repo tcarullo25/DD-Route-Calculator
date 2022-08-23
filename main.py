@@ -1,6 +1,7 @@
 from geopy.geocoders import Nominatim
 import WazeRouteCalculator
 
+
 def roundHalfUp(num):
     import decimal
     rounding = decimal.ROUND_HALF_UP
