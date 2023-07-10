@@ -95,7 +95,7 @@ def main():
     delTime2 = timeToMins('1:10')
     delTime3 = timeToMins('1:05')
     dels = [("Chick Fil-A Port Jefferson NY", "Walmart Middle Island", delTime1), 
-    ("261 Middle Country Rd, Selden, NY 11784", "6 Elkin Drive Middle Island NY", delTime2), ("1175 Middle Country Rd, Middle Island, NY 11953", 
+    ("261 Middle Country Rd, Selden, NY 11784", "ADDRESS2", delTime2), ("1175 Middle Country Rd, Middle Island, NY 11953", 
     "17 Artist Lake Blvd", delTime3)]
     #compute times before routing
     for i in range(len(dels)):
