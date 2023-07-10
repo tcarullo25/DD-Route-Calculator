@@ -17,7 +17,7 @@ def parseCoords(loc):
     return coords 
 
 def obtainMileage(deliveries):
-    currLoc = geolocator.geocode("28 Artist Drive Middle Island").latitude, geolocator.geocode("28 Artist Drive Middle Island").longitude
+    currLoc = geolocator.geocode("ADDRESS").latitude, geolocator.geocode("ADDRESS").longitude
     for (pickup, dest) in deliveries:
         pickupCoords = parseCoords(pickup)
         destCoords = parseCoords(dest)
@@ -85,7 +85,7 @@ def main():
     start_time_sec = int(time.strftime("%S", time.localtime()))
     start_time = datetime.timedelta(hours=start_time_hour, minutes=start_time_min, seconds=start_time_sec)
     dels = [("Chick Fil-A Port Jefferson NY", "Walmart Middle Island"), 
-    ("261 Middle Country Rd, Selden, NY 11784", "6 Elkin Drive Middle Island NY"), ("1175 Middle Country Rd, Middle Island, NY 11953", 
+    ("261 Middle Country Rd, Selden, NY 11784", "ADDRESS2"), ("1175 Middle Country Rd, Middle Island, NY 11953", 
     "17 Artist Lake Blvd")]
     #compute times before routing
     for i in range(len(dels)):
